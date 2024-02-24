@@ -89,7 +89,7 @@
 		922C3B122B61E5F200112ABC = {
 			isa = PBXGroup;
 			children = (
-				922C3B1D2B61E5F200112ABC /* BuzzBot */,
+				922C3B1D2B61E5F200112ABC /* MyBuzzBot */,
 				92E91E752B8825C900F6C15B /* Alarmwidget */,
 				92E91E702B8825C900F6C15B /* Frameworks */,
 				922C3B1C2B61E5F200112ABC /* Products */,
@@ -105,7 +105,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		922C3B1D2B61E5F200112ABC /* BuzzBot */ = {
+		922C3B1D2B61E5F200112ABC /* MyBuzzBot */ = {
 			isa = PBXGroup;
 			children = (
 				922C3B1E2B61E5F200112ABC /* AppDelegate.swift */,
@@ -116,7 +116,7 @@
 				922C3B292B61E5F300112ABC /* LaunchScreen.storyboard */,
 				92E712432B7E9E39004AA4DB /* Info.plist */,
 			);
-			path = BuzzBot;
+			path = MyBuzzBot;
 			sourceTree = "<group>";
 		};
 		92E91E702B8825C900F6C15B /* Frameworks */ = {
@@ -198,7 +198,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 922C3B162B61E5F200112ABC /* Build configuration list for PBXProject "BuzzBot" */;
+			buildConfigurationList = 922C3B162B61E5F200112ABC /* Build configuration list for PBXProject "MyBuzzBot" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -539,7 +539,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		922C3B162B61E5F200112ABC /* Build configuration list for PBXProject "BuzzBot" */ = {
+		922C3B162B61E5F200112ABC /* Build configuration list for PBXProject "MyBuzzBot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				922C3B2D2B61E5F300112ABC /* Debug */,
