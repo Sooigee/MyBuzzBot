@@ -13,18 +13,7 @@
 		922C3B262B61E5F200112ABC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 922C3B242B61E5F200112ABC /* Main.storyboard */; };
 		922C3B282B61E5F300112ABC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 922C3B272B61E5F300112ABC /* Assets.xcassets */; };
 		92A5BA302B7AECD000A88827 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 922C3B292B61E5F300112ABC /* LaunchScreen.storyboard */; };
-		92E91E832B8825CA00F6C15B /* AlarmwidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 92E91E6F2B8825C900F6C15B /* AlarmwidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		92E91E812B8825CA00F6C15B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 922C3B132B61E5F200112ABC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 92E91E6E2B8825C900F6C15B;
-			remoteInfo = AlarmwidgetExtension;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		92E7125B2B7EA56D004AA4DB /* Embed Foundation Extensions */ = {
@@ -33,7 +22,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				92E91E832B8825CA00F6C15B /* AlarmwidgetExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,18 +37,10 @@
 		922C3B272B61E5F300112ABC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		922C3B2A2B61E5F300112ABC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92E712432B7E9E39004AA4DB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92E91E6F2B8825C900F6C15B /* AlarmwidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AlarmwidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		922C3B182B61E5F200112ABC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		92E91E6C2B8825C900F6C15B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -82,7 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				922C3B1B2B61E5F200112ABC /* BuzzBot.app */,
-				92E91E6F2B8825C900F6C15B /* AlarmwidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,29 +95,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				92E91E822B8825CA00F6C15B /* PBXTargetDependency */,
 			);
 			name = BuzzBot;
 			productName = SiriGPT;
 			productReference = 922C3B1B2B61E5F200112ABC /* BuzzBot.app */;
 			productType = "com.apple.product-type.application";
-		};
-		92E91E6E2B8825C900F6C15B /* AlarmwidgetExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 92E91E842B8825CA00F6C15B /* Build configuration list for PBXNativeTarget "AlarmwidgetExtension" */;
-			buildPhases = (
-				92E91E6B2B8825C900F6C15B /* Sources */,
-				92E91E6C2B8825C900F6C15B /* Frameworks */,
-				92E91E6D2B8825C900F6C15B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AlarmwidgetExtension;
-			productName = AlarmwidgetExtension;
-			productReference = 92E91E6F2B8825C900F6C15B /* AlarmwidgetExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -152,9 +113,6 @@
 				TargetAttributes = {
 					922C3B1A2B61E5F200112ABC = {
 						CreatedOnToolsVersion = 15.2;
-					};
-					92E91E6E2B8825C900F6C15B = {
-						CreatedOnToolsVersion = 15.3;
 					};
 				};
 			};
@@ -172,7 +130,6 @@
 			projectRoot = "";
 			targets = (
 				922C3B1A2B61E5F200112ABC /* BuzzBot */,
-				92E91E6E2B8825C900F6C15B /* AlarmwidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -185,13 +142,6 @@
 				92A5BA302B7AECD000A88827 /* LaunchScreen.storyboard in Resources */,
 				922C3B282B61E5F300112ABC /* Assets.xcassets in Resources */,
 				922C3B262B61E5F200112ABC /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		92E91E6D2B8825C900F6C15B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,22 +158,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92E91E6B2B8825C900F6C15B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		92E91E822B8825CA00F6C15B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 92E91E6E2B8825C900F6C15B /* AlarmwidgetExtension */;
-			targetProxy = 92E91E812B8825CA00F6C15B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		922C3B242B61E5F200112ABC /* Main.storyboard */ = {
@@ -436,60 +371,6 @@
 			};
 			name = Release;
 		};
-		92E91E852B8825CA00F6C15B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WSENRWJ7J5;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Alarmwidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Alarmwidget;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mybuzzbot.mybuzzbot.Alarmwidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		92E91E862B8825CA00F6C15B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WSENRWJ7J5;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Alarmwidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Alarmwidget;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mybuzzbot.mybuzzbot.Alarmwidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -507,15 +388,6 @@
 			buildConfigurations = (
 				922C3B302B61E5F300112ABC /* Debug */,
 				922C3B312B61E5F300112ABC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		92E91E842B8825CA00F6C15B /* Build configuration list for PBXNativeTarget "AlarmwidgetExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				92E91E852B8825CA00F6C15B /* Debug */,
-				92E91E862B8825CA00F6C15B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
