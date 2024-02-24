@@ -423,10 +423,10 @@
 				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = WSENRWJ7J5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BuzzBot/Info.plist;
+				INFOPLIST_FILE = MyBuzzBot/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "My Buzz Bot";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need your permission to use the mic for dictation within the app.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need your permission to use the microphone for dictation within the app.";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "We need your permission to use speech recognition within the app.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -458,10 +458,10 @@
 				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = WSENRWJ7J5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BuzzBot/Info.plist;
+				INFOPLIST_FILE = MyBuzzBot/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "My Buzz Bot";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need your permission to use the mic for dictation within the app.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need your permission to use the microphone for dictation within the app.";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "We need your permission to use speech recognition within the app.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
