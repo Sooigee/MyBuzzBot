@@ -144,6 +144,7 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVSpeechSynt
             recognitionRequest?.endAudio()
             startStopButton.setTitle("Start Listening", for: .normal)
             statusLabel.text = ""
+            stopSpeaking()
             
             if let transcription = transcriptionTextView.text {
                 chatGPTStatusLabel.text = "Ai Status: Sending Request..."
