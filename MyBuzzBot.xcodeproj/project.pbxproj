@@ -13,12 +13,6 @@
 		922C3B262B61E5F200112ABC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 922C3B242B61E5F200112ABC /* Main.storyboard */; };
 		922C3B282B61E5F300112ABC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 922C3B272B61E5F300112ABC /* Assets.xcassets */; };
 		92A5BA302B7AECD000A88827 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 922C3B292B61E5F300112ABC /* LaunchScreen.storyboard */; };
-		92E91E722B8825C900F6C15B /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E91E712B8825C900F6C15B /* WidgetKit.framework */; };
-		92E91E742B8825C900F6C15B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E91E732B8825C900F6C15B /* SwiftUI.framework */; };
-		92E91E772B8825C900F6C15B /* AlarmwidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E91E762B8825C900F6C15B /* AlarmwidgetBundle.swift */; };
-		92E91E792B8825C900F6C15B /* AlarmwidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E91E782B8825C900F6C15B /* AlarmwidgetLiveActivity.swift */; };
-		92E91E7B2B8825C900F6C15B /* Alarmwidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E91E7A2B8825C900F6C15B /* Alarmwidget.swift */; };
-		92E91E7D2B8825C900F6C15B /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E91E7C2B8825C900F6C15B /* AppIntent.swift */; };
 		92E91E832B8825CA00F6C15B /* AlarmwidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 92E91E6F2B8825C900F6C15B /* AlarmwidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -56,14 +50,6 @@
 		922C3B2A2B61E5F300112ABC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92E712432B7E9E39004AA4DB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92E91E6F2B8825C900F6C15B /* AlarmwidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AlarmwidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		92E91E712B8825C900F6C15B /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
-		92E91E732B8825C900F6C15B /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		92E91E762B8825C900F6C15B /* AlarmwidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmwidgetBundle.swift; sourceTree = "<group>"; };
-		92E91E782B8825C900F6C15B /* AlarmwidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmwidgetLiveActivity.swift; sourceTree = "<group>"; };
-		92E91E7A2B8825C900F6C15B /* Alarmwidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarmwidget.swift; sourceTree = "<group>"; };
-		92E91E7C2B8825C900F6C15B /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
-		92E91E7E2B8825CA00F6C15B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		92E91E802B8825CA00F6C15B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +64,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92E91E742B8825C900F6C15B /* SwiftUI.framework in Frameworks */,
-				92E91E722B8825C900F6C15B /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				922C3B1D2B61E5F200112ABC /* MyBuzzBot */,
-				92E91E752B8825C900F6C15B /* Alarmwidget */,
-				92E91E702B8825C900F6C15B /* Frameworks */,
 				922C3B1C2B61E5F200112ABC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -117,28 +99,6 @@
 				92E712432B7E9E39004AA4DB /* Info.plist */,
 			);
 			path = MyBuzzBot;
-			sourceTree = "<group>";
-		};
-		92E91E702B8825C900F6C15B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				92E91E712B8825C900F6C15B /* WidgetKit.framework */,
-				92E91E732B8825C900F6C15B /* SwiftUI.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		92E91E752B8825C900F6C15B /* Alarmwidget */ = {
-			isa = PBXGroup;
-			children = (
-				92E91E762B8825C900F6C15B /* AlarmwidgetBundle.swift */,
-				92E91E782B8825C900F6C15B /* AlarmwidgetLiveActivity.swift */,
-				92E91E7A2B8825C900F6C15B /* Alarmwidget.swift */,
-				92E91E7C2B8825C900F6C15B /* AppIntent.swift */,
-				92E91E7E2B8825CA00F6C15B /* Assets.xcassets */,
-				92E91E802B8825CA00F6C15B /* Info.plist */,
-			);
-			path = Alarmwidget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,10 +212,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92E91E792B8825C900F6C15B /* AlarmwidgetLiveActivity.swift in Sources */,
-				92E91E7D2B8825C900F6C15B /* AppIntent.swift in Sources */,
-				92E91E772B8825C900F6C15B /* AlarmwidgetBundle.swift in Sources */,
-				92E91E7B2B8825C900F6C15B /* Alarmwidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,12 +371,11 @@
 		922C3B302B61E5F300112ABC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = WSENRWJ7J5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyBuzzBot/Info.plist;
@@ -450,12 +405,11 @@
 		922C3B312B61E5F300112ABC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = WSENRWJ7J5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyBuzzBot/Info.plist;
