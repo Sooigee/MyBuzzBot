@@ -20,6 +20,8 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVSpeechSynt
     @IBOutlet weak var apiURLTextField: UITextField!
     @IBOutlet weak var apiKeyTextField: UITextField!
     @IBOutlet weak var modelTextField: UITextField!
+    @IBOutlet weak var ClearButton: UIButton!
+
     
     
     
@@ -43,7 +45,7 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVSpeechSynt
         transcriptionTextView.text = "Your voice will appear here..."
         chatGPTStatusLabel.text = "Ai Status: Idle"
         speechSynthesizer.delegate = self
-        menuCenterXConstraint.constant = menuView.frame.width + 150
+        menuCenterXConstraint.constant = menuView.frame.width + 400
         updateBorderColor()
         apiURLTextField.placeholder = "Enter AI API URL"
         apiKeyTextField.placeholder = "Enter AI API Key"
@@ -55,6 +57,7 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVSpeechSynt
         apiURLTextField.text = apiURL
         apiKeyTextField.text = apiKey
         modelTextField.text = model
+        ClearButton.tintColor = UIColor.red
         
         modelTextField.autocorrectionType = .no
         apiKeyTextField.autocorrectionType = .no
@@ -104,12 +107,13 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVSpeechSynt
         // Toggle the menu visibility
         menuIsHidden = !menuIsHidden
         updateBorderColor()
+        view.endEditing(true)
         
         // Animate the menu sliding in or out
         UIView.animate(withDuration: 0.3, animations: {
             if self.menuIsHidden {
                 // Hide the menu by setting the centerX constraint to half the negative width of the menu
-                self.menuCenterXConstraint.constant = self.menuView.frame.width + 150
+                self.menuCenterXConstraint.constant = self.menuView.frame.width + 400
                 print("Hiding menu. Constant: \(self.menuCenterXConstraint.constant)")
             } else {
                 // Show the menu by setting the centerX constraint to align with the screen's centerX
@@ -408,6 +412,7 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVSpeechSynt
                 return
             }
             
+
             guard let data = data else {
                 DispatchQueue.main.async {
                     self?.chatGPTStatusLabel.text = "Ai Status: Error"
