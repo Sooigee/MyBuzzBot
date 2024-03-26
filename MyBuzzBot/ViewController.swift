@@ -101,6 +101,23 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVSpeechSynt
         }
     }
     
+    @IBAction func TapBackground(_ sender: Any) {
+        menuIsHidden = !menuIsHidden
+        updateBorderColor()
+        view.endEditing(true)
+        
+        // Animate the menu sliding in or out
+        UIView.animate(withDuration: 0.3, animations: {
+            if self.menuIsHidden {
+                // Hide the menu by setting the centerX constraint to half the negative width of the menu
+                self.menuCenterXConstraint.constant = self.menuView.frame.width + 400
+            }
+            self.view.layoutIfNeeded() // This animates the constraint change
+        }, completion: { _ in
+            print("Animation completed. Menu isHidden: \(self.menuIsHidden)")
+        })
+    }
+    
     @IBAction func burgerButtonTapped(_ sender: UIButton) {
         print("Burger button tapped")
         
@@ -143,6 +160,21 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVSpeechSynt
     }
     
     @IBAction func startStopButtonTapped(_ sender: UIButton) {
+        menuIsHidden = !menuIsHidden
+        updateBorderColor()
+        view.endEditing(true)
+        
+        // Animate the menu sliding in or out
+        UIView.animate(withDuration: 0.3, animations: {
+            if self.menuIsHidden {
+                // Hide the menu by setting the centerX constraint to half the negative width of the menu
+                self.menuCenterXConstraint.constant = self.menuView.frame.width + 400
+            }
+            self.view.layoutIfNeeded() // This animates the constraint change
+        }, completion: { _ in
+            print("Animation completed. Menu isHidden: \(self.menuIsHidden)")
+        })
+        
         if audioEngine.isRunning {
             audioEngine.stop()
             recognitionRequest?.endAudio()
@@ -247,6 +279,7 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVSpeechSynt
     
     
     @IBAction func cancelButtonTapped(_ sender: UIButton) {
+        
         if audioEngine.isRunning {
             audioEngine.stop()
             recognitionRequest?.endAudio()
@@ -269,6 +302,22 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, AVSpeechSynt
         
         currentDataTask?.cancel() // Cancel the current data task
         currentDataTask = nil
+        
+        menuIsHidden = !menuIsHidden
+        updateBorderColor()
+        view.endEditing(true)
+        
+        // Animate the menu sliding in or out
+        UIView.animate(withDuration: 0.3, animations: {
+            if self.menuIsHidden {
+                // Hide the menu by setting the centerX constraint to half the negative width of the menu
+                self.menuCenterXConstraint.constant = self.menuView.frame.width + 400
+            }
+            self.view.layoutIfNeeded() // This animates the constraint change
+        }, completion: { _ in
+            print("Animation completed. Menu isHidden: \(self.menuIsHidden)")
+        })
+        
         
         let audioSession = AVAudioSession.sharedInstance()
         do {
